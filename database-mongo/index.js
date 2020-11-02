@@ -62,7 +62,7 @@ const initializeData = () => {
 
    // =========== CREATE SEEDED RECORDS==============
 
-  for (let i = 0; i < 20; i++) {
+  for (let i = 0; i < 2; i++) {
     const MightyDataGen = new MightyData({
       Hero: {
         firstName: faker.name.firstName(),
@@ -110,7 +110,7 @@ const initializeData = () => {
 };
 
   // Initialize Data
-  initializeData();
+  // initializeData();
 
   // ================ RETRIEVE (GET) SAVED DUMY DATA ===============
   const retrieveData = (callback) => {
