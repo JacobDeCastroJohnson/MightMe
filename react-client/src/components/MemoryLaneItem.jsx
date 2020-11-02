@@ -14,18 +14,18 @@ class MemoryLaneItem extends React.Component {
     super();
 
     this.state = {
-
+      show: false,
     }
     //THIS BINDING AREA
   }
 
   render() {
-    const { obj } = this.props;
+    const { obj, modal, index } = this.props;
     // console.log(obj);
 
     return (
       <div>
-        <Image src={obj.MemoryLane.photo} alt="" />
+        <Image src={obj.MemoryLane.photo} alt="" onClick={(e) => modal(e, index)}/>
       </div>
 
     )

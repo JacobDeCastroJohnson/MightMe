@@ -9,7 +9,10 @@ import List from './components/List.jsx';
 import ATEAM from './components/ATeam.jsx';
 import MemoryLane from './components/MemoryLane.jsx';
 import LatestNews from './components/LatestNews.jsx';
+import ATeamModal from './components/ATeamModal.jsx';
+import MemLaneModal from './components/MemLaneModal.jsx';
 import dummy from './components/dummyData.js';
+
 
 class App extends React.Component {
   constructor(props) {
@@ -17,9 +20,12 @@ class App extends React.Component {
 
     this.state = {
       seededData: [],
+      show: false,
+      currentIndex: 0,
     }
     //THIS BINDING AREA
     this.getSeededData = this.getSeededData.bind(this);
+    this.showModal = this.showModal.bind(this);
   }
 
   componentDidMount() {
@@ -37,15 +43,31 @@ class App extends React.Component {
       .catch(console.log);
   }
 
+  // Show Modal
+  showModal(event, index) {
+    event.preventDefault();
+    this.setState({
+      // ...this.state,
+      show: !this.state.show,
+      currentIndex: index,
+    });
+  }
+
   render () {
     return (
     <div>
       <Header />
       <Welcome />
       {/* <List items={this.state.items}/> */}
-      <ATEAM seededData={this.state.seededData}/>
+      <ATEAM seededData={this.state.seededData} modal={this.showModal}/>
       <LatestNews />
-      <MemoryLane seededData={this.state.seededData}/>
+      <MemoryLane seededData={this.state.seededData} modal={this.showModal}/>
+      {this.state.show &&
+        <ATeamModal
+          show={this.state.show}
+          onClose={this.showModal}
+          index={this.state.currentIndex}>
+          </ATeamModal>}
     </div>
     )
   }

@@ -28,7 +28,7 @@ const HeroPhotoWrap = styled.div`
 `;
 
 const ATEAM = (props) => {
-  const { seededData } = props;
+  const { seededData, modal } = props;
   console.log('Props check from ATeamLevel: ', seededData.length);
 
   const family = seededData.slice(0,4);
@@ -44,6 +44,7 @@ const ATEAM = (props) => {
                 key={Math.random()}
                 index={index}
                 obj={item}
+                modal={modal}
               />
             ))
           }
@@ -55,6 +56,7 @@ const ATEAM = (props) => {
                 key={Math.random()}
                 index={index}
                 obj={item}
+                modal={modal}
               />
             ))
           }

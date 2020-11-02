@@ -29,7 +29,7 @@ const HeroPhotoWrap = styled.div`
 `;
 const MemoryLane = (props) => {
 
-  const { seededData } = props;
+  const { seededData, modal } = props;
   console.log('Props check from ATeamLevel: ', seededData.length);
 
   return (
@@ -43,6 +43,7 @@ const MemoryLane = (props) => {
                 key={Math.random()}
                 index={index}
                 obj={item}
+                modal={modal}
               />
             ))
           }

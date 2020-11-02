@@ -5,7 +5,7 @@ const Image = styled.img`
   width: 265px;
   height: 177px;
   object-fit: cover;
-  border-radius: 8px;
+  border-radius: 90px;
   margin-bottom: 10px;
   margin-top: 30px;
   `;
@@ -15,19 +15,20 @@ class ATeamMember extends React.Component {
     super(props);
 
     this.state = {
-
+      show: false,
     }
     //THIS BINDING AREA
 
   }
 
   render() {
-    const { obj } = this.props;
+    const { obj, modal, index } = this.props;
     // console.log(obj);
 
     return (
       <div>
         <h3>{obj.ATeam.firstName} {obj.ATeam.lastName}</h3>
+        <button onClick={(e) => modal(e, index)}> Message Me!</button>
         <Image src={obj.ATeam.photo} alt="" />
       </div>
 
