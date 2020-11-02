@@ -10,7 +10,7 @@ const ATeamWrapper = styled.h1`
   ${'' /* margin-bottom: 20px; */}
   margin-top: 0px;
   width: 100%;
-  background-color: teal;
+  background-color: white;
   position: center;
 `;
 

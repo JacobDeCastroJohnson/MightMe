@@ -7,18 +7,16 @@ const Image = styled.img`
   object-fit: cover;
   border-radius: 8px;
   margin-bottom: 10px;
-  margin-top: 30px;
   `;
 
-class ATeamMember extends React.Component {
-  constructor(props) {
-    super(props);
+class MemoryLaneItem extends React.Component {
+  constructor() {
+    super();
 
     this.state = {
 
     }
     //THIS BINDING AREA
-
   }
 
   render() {
@@ -27,12 +25,11 @@ class ATeamMember extends React.Component {
 
     return (
       <div>
-        <h3>{obj.ATeam.firstName} {obj.ATeam.lastName}</h3>
-        <Image src={obj.ATeam.photo} alt="" />
+        <Image src={obj.MemoryLane.photo} alt="" />
       </div>
 
     )
   }
 }
 
-export default ATeamMember;
+export default MemoryLaneItem;

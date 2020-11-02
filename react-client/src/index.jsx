@@ -44,8 +44,8 @@ class App extends React.Component {
       <Welcome />
       {/* <List items={this.state.items}/> */}
       <ATEAM seededData={this.state.seededData}/>
-      <MemoryLane />
       <LatestNews />
+      <MemoryLane seededData={this.state.seededData}/>
     </div>
     )
   }

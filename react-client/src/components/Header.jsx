@@ -9,15 +9,16 @@ const HeaderWrapper = styled.h1`
   ${'' /* margin-bottom: 20px; */}
   margin-top: 0px;
   width: 100%;
-  background-color: teal;
+  background-color: white;
   position: center;
 `;
 
 const Header = () => {
   return (
-    <div>
-      <HeaderWrapper> MIGHTY ME</HeaderWrapper>
-    </div>
+    <HeaderWrapper>
+      <img src='https://mightymemvp.s3-us-west-1.amazonaws.com/mvp_ATeam/MightyMeLogo.png' alt="" />
+      {/* <HeaderWrapper> MIGHTY ME</HeaderWrapper> */}
+    </HeaderWrapper>
   )
 }
 
