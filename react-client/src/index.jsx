@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import $ from 'jquery';
+// import styled from 'styled-components';
 import Header from './components/Header.jsx';
 import Welcome from './components/Welcome.jsx';
 import List from './components/List.jsx';
