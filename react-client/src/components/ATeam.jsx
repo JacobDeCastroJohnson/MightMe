@@ -14,24 +14,53 @@ const ATeamWrapper = styled.h1`
   position: center;
 `;
 
-class ATEAM extends React.Component {
-  constructor() {
-    super();
+const HeroPhotoWrap = styled.div`
+  display: flex;
+  position: center;
+  text-align: center;
+  list-style: none;
+  overflow: auto hidden;
+  padding-left: 0px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  min-width: 100%;
+  object-fit: cover;
+`;
 
-    this.state = {
+const ATEAM = (props) => {
+  const { seededData } = props;
+  console.log('Props check from ATeamLevel: ', seededData.length);
 
-    }
-    //THIS BINDING AREA
+  const family = seededData.slice(0,4);
+  const friends = seededData.slice(4,8);
 
-  }
-
-  render() {
-    return (
-      <div>
+  return (
+    <div>
         <ATeamWrapper> Your A-Team </ATeamWrapper>
-        <ATeamMember />
+        <HeroPhotoWrap>
+          {
+            family.map((item, index) => (
+              <ATeamMember
+                key={Math.random()}
+                index={index}
+                obj={item}
+              />
+            ))
+          }
+        </HeroPhotoWrap>
+        <HeroPhotoWrap>
+        {
+            friends.map((item, index) => (
+              <ATeamMember
+                key={Math.random()}
+                index={index}
+                obj={item}
+              />
+            ))
+          }
+        </HeroPhotoWrap>
       </div>
-    )
-  }
-}
+  )
+};
+
 export default ATEAM;

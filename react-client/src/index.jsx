@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import $ from 'jquery';
+// import $ from 'jquery';
+const axios = require('axios');
 // import styled from 'styled-components';
 import Header from './components/Header.jsx';
 import Welcome from './components/Welcome.jsx';
@@ -8,27 +9,32 @@ import List from './components/List.jsx';
 import ATEAM from './components/ATeam.jsx';
 import MemoryLane from './components/MemoryLane.jsx';
 import LatestNews from './components/LatestNews.jsx';
+import dummy from './components/dummyData.js';
 
 class App extends React.Component {
   constructor(props) {
     super(props);
+
     this.state = {
-      items: []
+      seededData: [],
     }
+    //THIS BINDING AREA
+    this.getSeededData = this.getSeededData.bind(this);
   }
 
   componentDidMount() {
-    $.ajax({
-      url: '/items',
-      success: (data) => {
-        this.setState({
-          items: data
-        })
-      },
-      error: (err) => {
-        console.log('err', err);
-      }
-    });
+    this.getSeededData();
+  }
+
+  // Axios GET request
+  getSeededData() {
+    axios.get('/api/MightyMe-Data')
+      .then((results) => results.data)
+      // .then(result => console.log(result))
+      .then((result) => this.setState({
+        seededData: result,
+      }))
+      .catch(console.log);
   }
 
   render () {
@@ -37,7 +43,7 @@ class App extends React.Component {
       <Header />
       <Welcome />
       {/* <List items={this.state.items}/> */}
-      <ATEAM />
+      <ATEAM seededData={this.state.seededData}/>
       <MemoryLane />
       <LatestNews />
     </div>

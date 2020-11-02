@@ -1,8 +1,17 @@
 import React from 'react';
+import styled from 'styled-components';
+
+const Image = styled.img`
+  width: 265px;
+  height: 177px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  `;
 
 class ATeamMember extends React.Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
 
     this.state = {
 
@@ -12,8 +21,15 @@ class ATeamMember extends React.Component {
   }
 
   render() {
+    const { obj } = this.props;
+    console.log(obj.ATeam.photo);
+
     return (
-      <h3>Test from A Team Member level</h3>
+      <div>
+        <h3>Team Member</h3>
+        <Image src={obj.ATeam.photo} alt="" />
+      </div>
+
     )
   }
 }
