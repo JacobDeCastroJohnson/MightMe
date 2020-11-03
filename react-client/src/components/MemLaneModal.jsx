@@ -68,9 +68,13 @@ const MessageBox = styled.input`
 
 const Image = styled.img`
   max-width: 600px;
-  ${'' /* max-height: 450px; */}
+  max-height: 400px;
   object-fit: cover;
   ${'' /* border-radius: 90px; */}
+  `;
+
+  const Tunes = styled.button`
+    margin-bottom: 20px;
   `;
 // ==============================================
 
@@ -97,8 +101,11 @@ return (
       <div>
         <Close onClick={(e) => { onClose(e); }}> CLOSE </Close>
       <MessageHeader>
-        <h1> Message NAME</h1>
         <Image src={props.data[index].MemoryLane.photo} alt=""/>
+        <Tunes> Play some tunes!</Tunes>
+        <audio controls="controls" src="https://mightymemvp.s3-us-west-1.amazonaws.com/mvp_ATeam/07+Respect.m4a">
+          Your browser does not support the HTML5 Audio element.
+        </audio>
       </MessageHeader>
 
       </div>

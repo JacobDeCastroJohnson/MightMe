@@ -6,12 +6,13 @@ const WelcomeWrapper = styled.div`
   height: 100%;
   margin: auto;
   text-align: center;
-  padding-right: 20px;
+  ${'' /* padding-right: 20px; */}
   ${'' /* margin-bottom: 20px; */}
   margin-top: 0px;
   width: 100%;
   background: rgb(2,0,36);
   background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(209,222,244,1) 0%, rgba(237,230,188,0) 51%);
+  padding-bottom: 40px;
 `;
 
 class Welcome extends React.Component {

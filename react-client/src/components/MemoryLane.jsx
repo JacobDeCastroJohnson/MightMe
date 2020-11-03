@@ -7,11 +7,10 @@ const MemLaneWrapper = styled.h1`
   margin: auto;
   text-align: center;
   height: 100%;
-  padding-right: 20px;
+  padding-top: 40px;
   ${'' /* margin-bottom: 20px; */}
   margin-top: 0px;
   width: 100%;
-  background-color: white;
   position: center;
 `;
 
@@ -27,13 +26,21 @@ const HeroPhotoWrap = styled.div`
   min-width: 100%;
   object-fit: cover;
 `;
+
+
+const MemoryBigWrap = styled.div`
+  background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(209,222,244,1) 0%, rgba(237,230,188,0) 51%);
+`;
+
+
+//==============================================================
 const MemoryLane = (props) => {
 
   const { seededData, modal } = props;
   // console.log('Props check from MemoryLaneLevel: ', seededData.length);
 
   return (
-    <div>
+    <MemoryBigWrap>
         <MemLaneWrapper> Memory Lane </MemLaneWrapper>
         <p> Click on any of the below images to enlarge and play corresponding audio!</p>
         <HeroPhotoWrap>
@@ -48,7 +55,7 @@ const MemoryLane = (props) => {
             ))
           }
         </HeroPhotoWrap>
-      </div>
+      </MemoryBigWrap>
   )
 };
 

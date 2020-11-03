@@ -6,11 +6,11 @@ const ATeamWrapper = styled.h1`
   margin: auto;
   text-align: center;
   height: 100%;
-  padding-right: 20px;
+  ${'' /* padding-right: 20px; */}
   ${'' /* margin-bottom: 20px; */}
   margin-top: 0px;
   width: 100%;
-  background-color: white;
+  ${'' /* background-color: white; */}
   position: center;
 `;
 
@@ -27,6 +27,10 @@ const HeroPhotoWrap = styled.div`
   object-fit: cover;
 `;
 
+const ATeamTeam = styled.div`
+  background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(209,222,244,1) 0%, rgba(237,230,188,0) 51%);
+`;
+
 const ATEAM = (props) => {
   const { seededData, modal } = props;
   // console.log('Props check from ATeamLevel: ', seededData.length);
@@ -35,7 +39,7 @@ const ATEAM = (props) => {
   const friends = seededData.slice(4,8);
 
   return (
-    <div>
+    <ATeamTeam className="ATeamTeam">
         <ATeamWrapper> Your A-Team </ATeamWrapper>
         <HeroPhotoWrap>
           {
@@ -61,7 +65,7 @@ const ATEAM = (props) => {
             ))
           }
         </HeroPhotoWrap>
-      </div>
+      </ATeamTeam>
   )
 };
 
