@@ -30,7 +30,7 @@ const HeroPhotoWrap = styled.div`
 const MemoryLane = (props) => {
 
   const { seededData, modal } = props;
-  console.log('Props check from ATeamLevel: ', seededData.length);
+  // console.log('Props check from MemoryLaneLevel: ', seededData.length);
 
   return (
     <div>

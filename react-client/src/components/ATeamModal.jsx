@@ -19,7 +19,7 @@ const ModalBackdrop = styled.section`
 const ModalStyle = styled.div`
   position: fixed;
     z-index: 10;
-    min-height: 430px;
+    min-height: 470px;
     width: 550px;
     left: 50%;
     top: 50%;
@@ -35,17 +35,16 @@ const ModalStyle = styled.div`
 `;
 
 const Close = styled.button`
-  ${'' /* border: none !important; */}
   border-color: black;
   margin-top: 15px;
-  ${'' /* background: transparent; */}
-  font-family: 'TimesNewRoman';
   font-size: 18px;
   line-height: 20px;
   margin-left: 16px;
-  &:focus {
+  ${'' /* &:focus {
     outline: none;
-  }
+  } */}
+  border-radius: 5px;
+  border-width: thin;
 `;
 
 const MessageHeader = styled.div`
@@ -53,7 +52,6 @@ const MessageHeader = styled.div`
 `;
 
 const MessageBox = styled.input`
-  ${'' /* border: none !important; */}
   background: white;
   font-family: 'TimesNewRoman';
   font-size: 18px;
@@ -64,8 +62,35 @@ const MessageBox = styled.input`
   width: 450px;
   height: 230px;
 `;
+
+const Image = styled.img`
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 90px;
+  `;
+
+  const ModalHead = styled.div`
+    display: flex;
+    justify-content: space-between;
+  `;
+
+  const ModalName = styled.div`
+    margin-top: 15px;
+    ${'' /* margin-right: 62px; */}
+  `;
+
+  const Filler = styled.div`
+    margin-top: 15px;
+    margin-right: 15px;
+    color: white;
+  `;
+
+// ========================================================================
+
 const ATeamModal = (props) => {
-  const { children } = props;
+  const { children, data, index} = props;
+  console.log(data);
 
 
 const onClose = (e) => {
@@ -79,17 +104,22 @@ const handleClick = (event, index) => {
 if (!props.show) {
   return null;
 }
+// console.log('Props check at ATeam Modal: ', props);
+// console.log('Props check at ATeam Modal: ', index);
 return (
   <ModalBackdrop>
     <ModalStyle>
       { children }
       <div>
+      <ModalHead>
         <Close onClick={(e) => { onClose(e); }}> CLOSE </Close>
-      <MessageHeader>
-        <h1> Message NAME</h1>
-        <div> Person Photo </div>
-      </MessageHeader>
-      <MessageBox type="text" placeholder="Write your message here"/>
+        <ModalName> Message {props.data[index].ATeam.firstName}</ModalName>
+        <Filler> Space 2</Filler>
+      </ModalHead>
+        <MessageHeader>
+          <Image src={props.data[index].ATeam.photo} alt=""/>
+        </MessageHeader>
+        <MessageBox type="text" placeholder="Write your message here"/>
       </div>
     </ModalStyle>
   </ModalBackdrop>

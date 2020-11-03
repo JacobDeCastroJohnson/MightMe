@@ -64,6 +64,7 @@ class App extends React.Component {
       <MemoryLane seededData={this.state.seededData} modal={this.showModal}/>
       {this.state.show &&
         <ATeamModal
+          data={this.state.seededData}
           show={this.state.show}
           onClose={this.showModal}
           index={this.state.currentIndex}>

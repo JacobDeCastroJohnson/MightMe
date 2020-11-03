@@ -29,7 +29,7 @@ const HeroPhotoWrap = styled.div`
 
 const ATEAM = (props) => {
   const { seededData, modal } = props;
-  console.log('Props check from ATeamLevel: ', seededData.length);
+  // console.log('Props check from ATeamLevel: ', seededData.length);
 
   const family = seededData.slice(0,4);
   const friends = seededData.slice(4,8);
