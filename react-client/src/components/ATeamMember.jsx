@@ -23,7 +23,7 @@ class ATeamMember extends React.Component {
 
   render() {
     const { obj, modal, index } = this.props;
-    console.log(obj.ATeam.photo);
+    // console.log(obj.ATeam.photo);
 
     return (
       <div>

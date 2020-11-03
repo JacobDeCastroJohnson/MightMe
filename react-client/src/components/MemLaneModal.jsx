@@ -19,8 +19,8 @@ const ModalBackdrop = styled.section`
 const ModalStyle = styled.div`
   position: fixed;
     z-index: 10;
-    min-height: 430px;
-    width: 550px;
+    min-height: 530px;
+    width: 650px;
     left: 50%;
     top: 50%;
     -webkit-transform: translate(-50%,-50%);
@@ -65,8 +65,18 @@ const MessageBox = styled.input`
   witdh: 500px !important;
   ${'' /* height: 400px; */}
 `;
+
+const Image = styled.img`
+  max-width: 600px;
+  ${'' /* max-height: 450px; */}
+  object-fit: cover;
+  ${'' /* border-radius: 90px; */}
+  `;
+// ==============================================
+
 const MemLaneModal = (props) => {
-  const { children } = props;
+  const { children, data, index } = props;
+  console.log(data);
 
 
 const onClose = (e) => {
@@ -88,9 +98,9 @@ return (
         <Close onClick={(e) => { onClose(e); }}> CLOSE </Close>
       <MessageHeader>
         <h1> Message NAME</h1>
-        <div> Person Photo </div>
+        <Image src={props.data[index].MemoryLane.photo} alt=""/>
       </MessageHeader>
-      <MessageBox type="text" placeholder="Write your message here"/>
+
       </div>
     </ModalStyle>
   </ModalBackdrop>

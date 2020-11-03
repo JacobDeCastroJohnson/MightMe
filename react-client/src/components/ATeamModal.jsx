@@ -90,7 +90,7 @@ const Image = styled.img`
 
 const ATeamModal = (props) => {
   const { children, data, index} = props;
-  console.log(data);
+  // console.log(data);
 
 
 const onClose = (e) => {

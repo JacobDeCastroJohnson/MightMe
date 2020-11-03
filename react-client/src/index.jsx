@@ -21,11 +21,13 @@ class App extends React.Component {
     this.state = {
       seededData: [],
       show: false,
+      memShow: false,
       currentIndex: 0,
     }
     //THIS BINDING AREA
     this.getSeededData = this.getSeededData.bind(this);
     this.showModal = this.showModal.bind(this);
+    this.showMemModal = this.showMemModal.bind(this);
   }
 
   componentDidMount() {
@@ -53,15 +55,23 @@ class App extends React.Component {
     });
   }
 
+  showMemModal(event, index) {
+    event.preventDefault();
+    this.setState({
+      // ...this.state,
+      memShow: !this.state.memShow,
+      currentIndex: index,
+    });
+  }
+
   render () {
     return (
     <div>
       <Header />
       <Welcome />
-      {/* <List items={this.state.items}/> */}
       <ATEAM seededData={this.state.seededData} modal={this.showModal}/>
       <LatestNews />
-      <MemoryLane seededData={this.state.seededData} modal={this.showModal}/>
+      <MemoryLane seededData={this.state.seededData} modal={this.showMemModal}/>
       {this.state.show &&
         <ATeamModal
           data={this.state.seededData}
@@ -69,6 +79,13 @@ class App extends React.Component {
           onClose={this.showModal}
           index={this.state.currentIndex}>
           </ATeamModal>}
+      {this.state.memShow &&
+        <MemLaneModal
+          data={this.state.seededData}
+          show={this.state.memShow}
+          onClose={this.showMemModal}
+          index={this.state.currentIndex}>
+          </MemLaneModal>}
     </div>
     )
   }
