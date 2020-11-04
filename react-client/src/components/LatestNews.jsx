@@ -18,23 +18,61 @@ const finalP = styled.p`
     padding-bottom: 40px !important;
 `;
 
+const LatestBtn = styled.button`
+  padding: 40px 400px;
+  margin-top: 15px;
+  font-size: 35px;
+  background-color: rgb(104 187 201);
+`;
 
-const LatestNews = () => {
+const LatestBtn2 = styled.button`
+  padding: 40px 378px;
+  margin-top: 15px;
+  font-size: 35px;
+  background-color: rgb(104 187 201);
+`;
+
+const LatestBtn3 = styled.button`
+  padding: 40px 380px;
+  margin-top: 15px;
+  font-size: 35px;
+  background-color: rgb(104 187 201);
+`;
+
+const LatestBtn4 = styled.button`
+  padding: 40px 390px;
+  margin-top: 15px;
+  font-size: 35px;
+  background-color: rgb(104 187 201);
+`;
+
+const LatestNews = (props) => {
+
+  //iframe URLs
+  const newsFeed = [
+    'https://www.cortexyme.com/trials/',
+    'http://med.stanford.edu/adrc.html',
+    'https://www.alz.org/help-support/caregiving/daily-care/food-eating',
+    'https://www.timeout.com/san-diego',
+  ];
+
+  const source1 = 'https://www.cortexyme.com/trials/';
+  const source2 = 'http://med.stanford.edu/adrc.html';
+  const source3 = 'https://med.stanford.edu/content/dam/sm/adrc/documents/3-17_Stanford_ADRC_Newsletter.pdf';
+  const source4 = 'https://www.thrillist.com/entertainment/san-diego/things-to-do-in-san-diego';
+
+  const { obj, modal, index } = props;
+  console.log(props);
+
   return (
     <LatestWrapper>
       <h1> Latest News</h1>
-      <button> Participate in clinical trials</button>
-        <p> Open enrollment for: CortexPlus, Alluvue, and NeuroGlow</p>
-      <button> Research into tomorrow's treatments</button>
-       <p> Memory enhancing superfood diet</p>
-       <p> Daily Exercise Routines </p>
-      <button> Programs & Support</button>
-        <p> Bamford University Patient Support Group</p>
-        <p> Alz Association Patient Support Group </p>
-      <button> Entertainment</button>
-        <p> YMCA Water aerobics class in San Francisco!</p>
-        <p> Barona Casino Gamble an Salsa Night!</p>
-        <finalP> Coronado Beach Bonfire Night!</finalP>
+      <LatestBtn onClick={(e) => modal(e, index, source1 )}> Clinical Trials</LatestBtn>
+      <LatestBtn2 onClick={(e) => modal(e, index, source2 )}> Support Groups</LatestBtn2>
+      <LatestBtn3 onClick={(e) => modal(e, index, source3 )}> Diet & Exercise </LatestBtn3>
+      <LatestBtn4 onClick={(e) => modal(e, index, source4 )}> Entertainment</LatestBtn4>
+
+      <finalP> </finalP>
     </LatestWrapper>
   )
 }
