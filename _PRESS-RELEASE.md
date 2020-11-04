@@ -17,48 +17,29 @@ Once the project moves into development, the press release can be used as a touc
  -->
 
 ## Heading ##
-  > Name the product in a way the reader (i.e. your target customers) will understand.
-
-  Might Me is a web-application that aids uses in easily identifying that they are loved
+  > Mighty Me is a web-application dashboard build to simplify the technical experience of daily digital activities for users currently living with the progressions of neuro-cognitive disabilities.
 
 ## Sub-Heading ##
-  > Describe who the market for the product is and what benefit they get. One sentence only underneath the title.
-
-  Mighty Me is web-application built to target and aid the more common emotional
-  conditions of users currently dealing with neurocognitive disorders such as
-  Alzheimer's Disease and Dementia.
+  > Mighty Me is specifically built for users currently dealing with neuro-cognitive disabilities. It's purpose is to aid users in independently fulfilling some of their more common daily digital activities, inclusive of messaging their care teams, researching news outlets, and reminsicing on happy snapshots in life.
 
 ## Summary ##
-  > Give a summary of the product and the benefit. Assume the reader will not read anything else so make this paragraph good.
+  > Mighty Me is a web-application dashboard build to simplify the technical experience of daily digital activites for users currently living with the progressions of neuro-cognitive disabilities. While many of today's most popular tech products build upon and assume a certain degree of technical understanding and proficiency from their respctive userbases, Mighty Me champions the simple and clean for it's userbase whose abilities are moving in the opposite direction. With Mighty Me, users can maintain a higher degree of digital independence and continue living a more connected lifestyle.
 
-  Mighty Me is web-application built to target and aid the more common emotional
-  conditions of users currently dealing with neurocognitive disorders such as
-  Alzheimer's Disease and Dementia. It's goal as a project is to bring about easy
-  reminders to users that they are still loved, and most importantly, still here. The
-  application incorporates a photo carousel, audio-recordings, and even outbound SMS
-  messaging to aid users in their daily lives.
 
 ## Problem ##
-  > Describe the problem your product solves.
-
-  Many of today's tech products geared towards uses with neurocognitive disorders
-  target the cognitive exercises that. That being said, these applications arre not always easiest to use.
+  > Many of today's most popular tech products build upon and assume a certain degree of technical understanding and proficiency from their respective userbases. As beneficial as this is, it does silo a field of potential/ former users from being able to keep up with the technical architecture of these applications. For users currently dealing with neoro-cognitive disabilities, their ability to navigate these digital platforms can become a stressful, complicated and sometimes impossible task.
 
 ## Solution ##
-  > Describe how your product elegantly solves the problem.
+  > Mighty Me aims to alleviate some of the stressors of navigating tech platforms by rolling some of the more common applications into a signle dashboard for its userbase. These common activities include messaging care teams, independently researching the latest categorical news and updates, and browsing through photographs.
 
 ## Quote from You ##
-  > A quote from a spokesperson in your company.
-
-  u
+  > "I am convinced that tech products should be built for their userbase, not the other way around. Follow that rule of thumb, and at the very least your product will have made somebody's life better. That makes it a product worth building."
 
 ## How to Get Started ##
-  > Describe how easy it is to get started.
+  > Mighty Me is currently in development mode. Estimated delivery date late early 2021.
 
 ## Customer Quote ##
-  > Provide a quote from a hypothetical customer that describes how they experienced the benefit.
-
-  "This App makes me feel capable! I still have hope and I know who my team is!
+  > "This App makes me feel capable and fun! I still have hope and I know who my team is!
 
 ## Closing and Call to Action ##
-  > Wrap it up and give pointers where the reader should go next.
+  > For more information, please reach out to Jacob Johnson.
