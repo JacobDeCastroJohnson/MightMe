@@ -45,6 +45,7 @@ const Close = styled.button`
   } */}
   border-radius: 5px;
   border-width: thin;
+  background-color: pink ;
 `;
 
 const MessageHeader = styled.div`
@@ -57,10 +58,10 @@ const MessageBox = styled.input`
   font-size: 18px;
   line-height: 20px;
   margin-left: 48px;
-  margin-top: 20px;
+  margin-top: 10px;
   border-color: black;
   width: 450px;
-  height: 230px;
+  height: 200px;
 `;
 
 const Image = styled.img`
@@ -78,12 +79,27 @@ const Image = styled.img`
   const ModalName = styled.div`
     margin-top: 15px;
     ${'' /* margin-right: 62px; */}
+    font-size: 25px;
+    margin-bottom: 10px;
+    font-family: cursive;
   `;
 
   const Filler = styled.div`
     margin-top: 15px;
     margin-right: 15px;
     color: white;
+  `;
+
+  const SubmitBtn = styled.button`
+    margin-left: 48px;
+    padding-left: 206px;
+    padding-right: 200px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border: none;
+    background-color: rgb(86, 198, 86);
+    color: white;
+    font-size: 20px;
   `;
 
 // ========================================================================
@@ -112,7 +128,7 @@ return (
       { children }
       <div>
       <ModalHead>
-        <Close onClick={(e) => { onClose(e); }}> CLOSE </Close>
+        <Close onClick={(e) => { onClose(e); }}> Close </Close>
         <ModalName> Message {props.data[index].ATeam.firstName}</ModalName>
         <Filler> Space 2</Filler>
       </ModalHead>
@@ -120,6 +136,7 @@ return (
           <Image src={props.data[index].ATeam.photo} alt=""/>
         </MessageHeader>
         <MessageBox type="text" placeholder="Write your message here"/>
+        <SubmitBtn> Send! </SubmitBtn>
       </div>
     </ModalStyle>
   </ModalBackdrop>

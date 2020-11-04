@@ -19,15 +19,15 @@ const ModalBackdrop = styled.section`
 const ModalStyle = styled.div`
   position: fixed;
     z-index: 10;
-    min-height: 530px;
+    min-height: 540px;
     width: 650px;
     left: 50%;
     top: 50%;
     -webkit-transform: translate(-50%,-50%);
     -ms-transform: translate(-50%,-50%);
     transform: translate(-50%,-50%);
-    background-color: white;
-    border-color: black;
+    background-color: black;
+    border-color: white;
     border-radius: 1px;
     border-radius: 15px;
     display: grid;
@@ -35,17 +35,13 @@ const ModalStyle = styled.div`
 `;
 
 const Close = styled.button`
-  ${'' /* border: none !important; */}
-  border-color: black;
-  margin-top: 15px;
-  ${'' /* background: transparent; */}
-  font-family: 'TimesNewRoman';
-  font-size: 18px;
-  line-height: 20px;
-  margin-left: 16px;
-  &:focus {
-    outline: none;
-  }
+margin-top: 15px;
+    font-size: 18px;
+    line-height: 20px;
+    margin-left: 16px;
+    border-radius: 10px;
+    border: none;
+    padding: 5px;
 `;
 
 const MessageHeader = styled.div`
@@ -69,6 +65,8 @@ const MessageBox = styled.input`
 const Image = styled.img`
   max-width: 600px;
   max-height: 400px;
+  padding-top: 15px;
+  padding-bottom: 5px;
   object-fit: cover;
   ${'' /* border-radius: 90px; */}
   `;
@@ -84,6 +82,7 @@ const MemLaneModal = (props) => {
 
 
 const onClose = (e) => {
+  e.preventDefault();
   props.onClose && props.onClose(e);
 };
 
@@ -99,10 +98,9 @@ return (
     <ModalStyle>
       { children }
       <div>
-        <Close onClick={(e) => { onClose(e); }}> CLOSE </Close>
+        <Close onClick={(e) => { onClose(e); }}> Close </Close>
       <MessageHeader>
         <Image src={props.data[index].MemoryLane.photo} alt=""/>
-        <Tunes> Play some tunes!</Tunes>
         <audio controls="controls" src="https://mightymemvp.s3-us-west-1.amazonaws.com/mvp_ATeam/07+Respect.m4a">
           Your browser does not support the HTML5 Audio element.
         </audio>

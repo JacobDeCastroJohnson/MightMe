@@ -6,9 +6,17 @@ const Image = styled.img`
   height: 177px;
   object-fit: cover;
   border-radius: 90px;
-  margin-bottom: 10px;
-  margin-top: 30px;
+  margin-bottom: 70px;
+  margin-top: 10px;
   `;
+
+const MsgMe = styled.button`
+  background-color: rgb(236, 76, 76);
+  color: white;
+  padding: 10px;
+  border-radius: 15px;
+  border-color: white;
+`;
 
 class ATeamMember extends React.Component {
   constructor(props) {
@@ -28,7 +36,7 @@ class ATeamMember extends React.Component {
     return (
       <div>
         <h3>{obj.ATeam.firstName} {obj.ATeam.lastName}</h3>
-        <button onClick={(e) => modal(e, index)}> Message Me!</button>
+        <MsgMe onClick={(e) => modal(e, index)}> Message Me!</MsgMe>
         <Image src={obj.ATeam.photo} alt="" />
       </div>
 

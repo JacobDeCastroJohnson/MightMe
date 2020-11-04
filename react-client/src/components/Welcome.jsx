@@ -15,6 +15,12 @@ const WelcomeWrapper = styled.div`
   padding-bottom: 40px;
 `;
 
+const WelcomeText = styled.div`
+  color: rgb(17,113,130);
+  font-family: cursive;
+  font-size: xxx-large;
+`;
+
 class Welcome extends React.Component {
   constructor() {
     super();
@@ -29,7 +35,7 @@ class Welcome extends React.Component {
 
     return (
       <WelcomeWrapper>
-        <h1> Welcome Back Susan!</h1>
+        <WelcomeText> Welcome Back Susan!</WelcomeText>
         <img src="https://mightymemvp.s3-us-west-1.amazonaws.com/mvp_ATeam/Hero5.jpg" alt="Hero User 5" width="340" height="500"/>
       </WelcomeWrapper>
     )

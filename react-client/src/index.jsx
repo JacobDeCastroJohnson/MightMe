@@ -12,6 +12,7 @@ import LatestNews from './components/LatestNews.jsx';
 import ATeamModal from './components/ATeamModal.jsx';
 import MemLaneModal from './components/MemLaneModal.jsx';
 import dummy from './components/dummyData.js';
+// import GlobalFonts from './fonts/fonts.js';
 
 
 class App extends React.Component {
