@@ -36,7 +36,7 @@ Once the project moves into development, the press release can be used as a touc
   > "I am convinced that tech products should be built for their userbase, not the other way around. Follow that rule of thumb, and at the very least your product will have made somebody's life better. That makes it a product worth building."
 
 ## How to Get Started ##
-  > README: https://github.com/JacobDeCastroJohnson/MightMe/blob/master/_README.md
+  > README: https://github.com/JacobDeCastroJohnson/MightMe/blob/master/README.md
 
 ## Customer Quote ##
   > "This App makes me feel capable and fun! I still have hope and I know who my team is!
