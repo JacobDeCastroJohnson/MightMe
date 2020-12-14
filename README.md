@@ -4,6 +4,8 @@
 
   PRESS RELEASE: https://github.com/JacobDeCastroJohnson/MightMe/blob/master/_PRESS-RELEASE.md
 
+![Alt text](/screenshots/ATeamShot2.jpg?raw=true "A-Team")
+
 ## Table of Contents
 
 1. [Usage](#Usage)
