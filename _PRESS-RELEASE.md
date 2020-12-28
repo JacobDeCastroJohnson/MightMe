@@ -1,5 +1,7 @@
 # Mighty Me #
 
+![Alt text](/screenshots/ATeamShot2.jpg?raw=true "A-Team")
+
 <!--
 > This material was originally posted [here](http://www.quora.com/What-is-Amazons-approach-to-product-development-and-product-management). It is reproduced here for posterities sake.
 
@@ -16,24 +18,22 @@ Oh, and I also like to write press-releases in what I call "Oprah-speak" for mai
 Once the project moves into development, the press release can be used as a touchstone; a guiding light. The product team can ask themselves, "Are we building what is in the press release?" If they find they're spending time building things that aren't in the press release (overbuilding), they need to ask themselves why. This keeps product development focused on achieving the customer benefits and not building extraneous stuff that takes longer to build, takes resources to maintain, and doesn't provide real customer benefit (at least not enough to warrant inclusion in the press release).
  -->
 
-## Heading ##
+## What is Mighty Me? ##
   > Mighty Me is a web-application dashboard build to simplify the technical experience of daily digital activities for users currently living with the progressions of neuro-cognitive disabilities.
 
-## Sub-Heading ##
   > Mighty Me is specifically built for users currently dealing with neuro-cognitive disabilities. It's purpose is to aid users in independently fulfilling some of their more common daily digital activities, inclusive of messaging their care teams, researching news outlets, and reminsicing on happy snapshots in life.
 
-## Summary ##
-  > Mighty Me is a web-application dashboard build to simplify the technical experience of daily digital activites for users currently living with the progressions of neuro-cognitive disabilities. While many of today's most popular tech products build upon and assume a certain degree of technical understanding and proficiency from their respctive userbases, Mighty Me champions the simple and clean for it's userbase whose abilities are moving in the opposite direction. With Mighty Me, users can maintain a higher degree of digital independence and continue living a more connected lifestyle.
+  > While many of today's most popular tech products build upon and assume a certain degree of technical understanding and proficiency from their respctive userbases, Mighty Me champions the simple and clean for it's userbase whose abilities are moving in the opposite direction. With Mighty Me, users can maintain a higher degree of digital independence and continue living a more connected lifestyle.
 
 
-## Problem ##
+## Problems it addresses: ##
   > Many of today's most popular tech products build upon and assume a certain degree of technical understanding and proficiency from their respective userbases. As beneficial as this is, it does silo a field of potential/ former users from being able to keep up with the technical architecture of these applications. For users currently dealing with neoro-cognitive disabilities, their ability to navigate these digital platforms can become a stressful, complicated and sometimes impossible task.
 
-## Solution ##
+## Solutions it provides: ##
   > Mighty Me aims to alleviate some of the stressors of navigating tech platforms by rolling some of the more common applications into a signle dashboard for its userbase. These common activities include messaging care teams, independently researching the latest categorical news and updates, and browsing through photographs.
 
-## Quote from You ##
-  > "I am convinced that tech products should be built for their userbase, not the other way around. Follow that rule of thumb, and at the very least your product will have made somebody's life better. That makes it a product worth building."
+<!-- ## Quote from You ##
+  > "I am convinced that tech products should be built for their userbase, not the other way around. Follow that rule of thumb, and at the very least your product will have made somebody's life better. That makes it a product worth building." -->
 
 ## How to Get Started ##
   > README: https://github.com/JacobDeCastroJohnson/MightMe/blob/master/README.md

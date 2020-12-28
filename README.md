@@ -1,10 +1,6 @@
 # Mighty Me: README
 
-> Project description
-
   PRESS RELEASE: https://github.com/JacobDeCastroJohnson/MightMe/blob/master/_PRESS-RELEASE.md
-
-![Alt text](/screenshots/ATeamShot2.jpg?raw=true "A-Team")
 
 ## Table of Contents
 
@@ -13,8 +9,6 @@
 1. [Development](#development)
 
 ## Usage
-
-> Some usage instructions
 
   To get the application, run http://localhost:3000/
 
