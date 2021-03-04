@@ -5,7 +5,7 @@ const HeaderWrapper = styled.h1`
   margin: auto;
   text-align: center;
   height: 100%;
-  padding-right: 20px;
+  ${'' /* padding-right: 20px; */}
   ${'' /* margin-bottom: 20px; */}
   margin-top: 0px;
   width: 100%;

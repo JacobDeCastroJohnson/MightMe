@@ -30,7 +30,8 @@ const HeroPhotoWrap = styled.div`
 
 
 const MemoryBigWrap = styled.div`
-  background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(209,222,244,1) 0%, rgba(237,230,188,0) 51%);
+  ${'' /* background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(209,222,244,1) 0%, rgba(237,230,188,0) 51%); */}
+  background: white;
   padding-bottom: 50px;
 `;
 
@@ -68,7 +69,7 @@ const MemoryLane = (props) => {
           }
         </HeroPhotoWrap>
       </MemoryBigWrap>
-      <Footer> Created by: Jacob Johnson | HRSF130 </Footer>
+      <Footer> Created by: Jacob Johnson</Footer>
     </div>
   )
 };

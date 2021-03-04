@@ -5,11 +5,9 @@ const LatestWrapper = styled.div`
   margin: auto;
   text-align: center;
   height: 100%;
-  ${'' /* padding-right: 20px; */}
-  ${'' /* margin-bottom: 20px; */}
   margin-top: 0px;
   width: 100%;
-  background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(209,222,244,1) 0%, rgba(237,230,188,0) 51%);
+  background: white;
   position: center;
 `;
 
@@ -22,28 +20,28 @@ const LatestBtn = styled.button`
   padding: 40px 400px;
   margin-top: 15px;
   font-size: 35px;
-  background-color: rgb(104 187 201);
+  background-color: #00a8a8;
 `;
 
 const LatestBtn2 = styled.button`
   padding: 40px 378px;
   margin-top: 15px;
   font-size: 35px;
-  background-color: rgb(104 187 201);
+  background-color: #00a8a8;
 `;
 
 const LatestBtn3 = styled.button`
   padding: 40px 380px;
   margin-top: 15px;
   font-size: 35px;
-  background-color: rgb(104 187 201);
+  background-color: #00a8a8;
 `;
 
 const LatestBtn4 = styled.button`
   padding: 40px 390px;
   margin-top: 15px;
   font-size: 35px;
-  background-color: rgb(104 187 201);
+  background-color: #00a8a8;
 `;
 
 const LatestNews = (props) => {

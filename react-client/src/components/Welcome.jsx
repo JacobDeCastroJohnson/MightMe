@@ -6,18 +6,15 @@ const WelcomeWrapper = styled.div`
   height: 100%;
   margin: auto;
   text-align: center;
-  ${'' /* padding-right: 20px; */}
-  ${'' /* margin-bottom: 20px; */}
   margin-top: 0px;
   width: 100%;
-  background: rgb(2,0,36);
-  background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(209,222,244,1) 0%, rgba(237,230,188,0) 51%);
+  background: white;
   padding-bottom: 40px;
 `;
 
 const WelcomeText = styled.div`
   color: rgb(17,113,130);
-  font-family: cursive;
+  font-family: fantasy;
   font-size: xxx-large;
 `;
 
@@ -35,7 +32,7 @@ class Welcome extends React.Component {
 
     return (
       <WelcomeWrapper>
-        <WelcomeText> Welcome Back Susan!</WelcomeText>
+        <WelcomeText> Welcome Back, Susan!</WelcomeText>
         <img src="https://mightymemvp.s3-us-west-1.amazonaws.com/mvp_ATeam/Hero5.jpg" alt="Hero User 5" width="340" height="500"/>
       </WelcomeWrapper>
     )

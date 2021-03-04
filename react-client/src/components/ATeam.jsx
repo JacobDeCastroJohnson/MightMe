@@ -28,7 +28,8 @@ const HeroPhotoWrap = styled.div`
 `;
 
 const ATeamTeam = styled.div`
-  background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(209,222,244,1) 0%, rgba(237,230,188,0) 51%);
+  ${'' /* background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(209,222,244,1) 0%, rgba(237,230,188,0) 51%); */}
+  background: white;
 `;
 
 const ATEAM = (props) => {

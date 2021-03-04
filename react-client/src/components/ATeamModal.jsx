@@ -81,7 +81,7 @@ const Image = styled.img`
     ${'' /* margin-right: 62px; */}
     font-size: 25px;
     margin-bottom: 10px;
-    font-family: cursive;
+    font-family: fantasy;
   `;
 
   const Filler = styled.div`
@@ -92,11 +92,11 @@ const Image = styled.img`
 
   const SubmitBtn = styled.button`
     margin-left: 48px;
-    padding-left: 206px;
+    margin-top: 1px;
+    padding-left: 201px;
     padding-right: 200px;
     padding-top: 8px;
     padding-bottom: 8px;
-    border: none;
     background-color: rgb(86, 198, 86);
     color: white;
     font-size: 20px;
